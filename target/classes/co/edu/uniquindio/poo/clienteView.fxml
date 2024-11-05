@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.poo.viewController.ClienteView">
+   <children>
+      <TableView fx:id="tblVehiculosDisponibles" layoutX="220.0" layoutY="68.0" prefHeight="200.0" prefWidth="510.0">
+        <columns>
+          <TableColumn fx:id="clmMatricula" prefWidth="75.0" text="Matricula" />
+          <TableColumn fx:id="clmModelo" prefWidth="75.0" text="Modelo" />
+            <TableColumn fx:id="clmMarca" prefWidth="75.0" text="Marca" />
+            <TableColumn fx:id="clmAñoFabricacion" prefWidth="119.0" text="Año de Fabricacion" />
+            <TableColumn fx:id="clmTipoVehiculo" prefWidth="97.0" text="Tipo Vehiculo" />
+            <TableColumn fx:id="clmReservado" prefWidth="75.0" text="Reservado" />
+        </columns>
+      </TableView>
+      <Button layoutX="60.0" layoutY="453.0" mnemonicParsing="false" onAction="#onAgregarVehiculo" text="Agregar Vehiculo" />
+      <TextField fx:id="tfMatricula" layoutX="29.0" layoutY="68.0" />
+      <Label layoutX="51.0" layoutY="50.0" text="Ingrese la matricula." />
+      <Label layoutX="249.0" layoutY="-2.0" text="Reserva de vehiculos">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="44.0" text="Vehiculos disponibles">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="238.0" layoutY="453.0" mnemonicParsing="false" text="Actualizar Vehiculo" />
+      <Button layoutX="421.0" layoutY="453.0" mnemonicParsing="false" text="Eliminar Vehiculo" />
+      <Button layoutX="582.0" layoutY="453.0" mnemonicParsing="false" text="Reservar Vehiculo" />
+      <TextField fx:id="tfModelo" layoutX="29.0" layoutY="136.0" />
+      <TextField fx:id="tfMarca" layoutX="29.0" layoutY="205.0" />
+      <TextField fx:id="tfAñoFabricacion" layoutX="30.0" layoutY="276.0" />
+      <TextField fx:id="tfTipoVehiculo" layoutX="31.0" layoutY="347.0" />
+      <Label layoutX="56.0" layoutY="119.0" text="Ingrese el modelo" />
+      <Label layoutX="60.0" layoutY="188.0" text="Ingrese la marca" />
+      <Label layoutX="55.0" layoutY="255.0" text="Año de fabricacion" />
+      <Label layoutX="61.0" layoutY="329.0" text="Tipo de Vehiculo" />
+      <TableView fx:id="tblVehiculosReservados" layoutX="220.0" layoutY="325.0" prefHeight="95.0" prefWidth="510.0">
+         <columns>
+            <TableColumn fx:id="clmMatricula1" prefWidth="75.0" text="Matricula" />
+            <TableColumn fx:id="clmModelo1" prefWidth="75.0" text="Modelo" />
+            <TableColumn fx:id="clmMarca1" prefWidth="75.0" text="Marca" />
+            <TableColumn fx:id="clmAñoFabricacion1" prefWidth="119.0" text="Año de Fabricacion" />
+            <TableColumn fx:id="clmTipoVehiculo1" prefWidth="97.0" text="Tipo Vehiculo" />
+            <TableColumn fx:id="clmReservado1" prefWidth="75.0" text="Reservado" />
+         </columns>
+      </TableView>
+      <Label layoutX="382.0" layoutY="301.0" text="Vehiculos reservados">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
